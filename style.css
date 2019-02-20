@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header-area {
+	background: #666;
+	padding: 10px 0;
+}
+
+.content-area {
+	background: #fff;
+	height: 100vh;
+}
+
+.footer-area {
+	min-height: 100px;
+	background: #666;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.logo img {
+	height: 45px;
+	width: 45px;
+}
+
+.container {
+	width: 1120px;
+	margin: 0 auto;
+}
+
+.main-menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.main-menu ul li {
+	display: inline-block;
+	position: relative;
+}
+
+.main-menu {
+	float: right;
+}
+
+.main-menu ul li a {
+	display: block;
+	padding: 14px 20px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #7C090F;
+	font-weight: 700;
+	text-transform: capitalize;
+	transition: .4s;
+}
+
+.main-menu ul li a:hover {
+	color: #fff;
+}
+
+
+/*===================
+DROP DOWN MENU
+===================*/
+.main-menu ul li ul {
+	position: absolute;
+	width: 180px;
+	background: #666;
+	top: 59px;
+	left: 40px;
+	transition: .4s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.main-menu ul li:hover ul {
+	opacity: 1;
+	visibility: visible;
+	left: 0;
+}
+
+.main-menu ul li ul li {
+	display: block;
+	transition: .4s;
+}
+
+.main-menu ul li ul li:hover> a {
+	background: #7B0F13;
+	color: #fff;
+}
+/*======================
+MULTI LEVEL DROP DOWN
+======================*/
+
+.main-menu ul li:hover ul ul {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main-menu ul ul li:hover > ul {
+    left: 180px;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+}
